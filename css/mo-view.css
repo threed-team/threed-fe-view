@@ -1,0 +1,211 @@
+/* *******************************
+                common
+**********************************/
+/* *******************************
+                main
+**********************************/
+.mo-vew-main {
+  padding: 73px 0;
+  width: 90vw;
+  margin: 0 auto;
+}
+.mo-vew-main .main-h2 {
+  font-size: 1.5rem;
+  padding-bottom: 40px;
+}
+.mo-vew-main .list-days {
+  display: flex;
+  color: #8D8D8D;
+}
+.mo-vew-main .main-top-h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.mo-vew-main .main-top-h3 img {
+  width: 1.75rem;
+}
+.mo-vew-main .list-main .list-main-left {
+  padding-bottom: 60px;
+}
+.mo-vew-main .list-main .list-main-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1.5px solid #1F1F1F;
+}
+.mo-vew-main .list-main .list-main-middle {
+  padding: 10px 0 50px;
+}
+.mo-vew-main .list-main .list-main-middle p {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  font-weight: 200;
+}
+.mo-vew-main .list-main .list-main-bottom h3 {
+  font-size: 1rem;
+  padding-bottom: 20px;
+  line-height: 1.25rem;
+}
+.mo-vew-main .list-main .list-main-bottom .list-main-more {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.mo-vew-main .list-main .list-main-bottom .list-main-more a {
+  padding: 20px;
+  display: block;
+}
+.mo-vew-main .list-main .list-main-bottom .more-sum-main {
+  border-radius: 5px;
+}
+.mo-vew-main .list-main .list-main-bottom .more-sum-main .more-sum {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.mo-vew-main .list-main .list-main-bottom .more-sum-main .more-sum img {
+  width: 100%;
+}
+.mo-vew-main .list-main .list-main-bottom .more-sum-main .more-title {
+  font-size: 1.125rem;
+  padding: 10px 0;
+  font-weight: 500;
+}
+.mo-vew-main .list-main .list-main-bottom .more-sum-main .more-text {
+  font-size: 0.8rem;
+  font-weight: 200;
+  color: #333;
+  line-height: 1.25rem;
+}
+.mo-vew-main .list-main .list-main-bottom .more-sum-main .more-bottom {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #8D8D8D;
+  padding-top: 10px;
+}
+.mo-vew-main .list-main .list-main-right > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 0.875rem;
+}
+.mo-vew-main .list-main .list-main-right .right-card-box {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 1.25rem;
+}
+.mo-vew-main .list-main .list-main-right .main-right-card h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.mo-vew-main .list-main .list-main-right .main-right-card h3 span:last-child {
+  font-size: 1.56rem;
+  font-weight: 700;
+}
+.mo-vew-main .list-main .list-main-right .main-right-card .card-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  gap: 10px;
+}
+.mo-vew-main .list-main .list-main-right .main-right-card .card-list > li:nth-child(3) {
+  width: 100%;
+  text-align: center;
+}
+.mo-vew-main .list-main .list-main-right .main-right-card .card-list .card-list-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  height: 107px;
+}
+.mo-vew-main .list-main .list-main-right .main-right-card .card-list .card-list-second button {
+  border: none;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  cursor: pointer;
+}
+.mo-vew-main .list-main .list-main-right .main-right-card .card-list .card-list-second button p {
+  font-size: 1.125rem;
+  color: #000;
+  font-weight: 600;
+}
+.mo-vew-main .list-main .list-main-right .main-right-card .card-list .navi-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mo-vew-main .list-main .list-main-right .main-right-card .card-list .navi-list li {
+  width: 100%;
+}
+.mo-vew-main .list-main .list-main-right .main-right-card .card-list .navi-list a {
+  display: block;
+  width: 100%;
+  position: relative;
+  color: #8C8C8C;
+  height: 42px;
+  line-height: 42px;
+}
+.mo-vew-main .list-main .list-main-right .main-right-card .card-list .navi-list a::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  background: #D9D9D9;
+  transform: translateY(-50%);
+}
+.mo-vew-main .list-main .list-main-right .main-right-card .card-list .navi-list li:last-child a::after {
+  display: none;
+}
+.mo-vew-main .list-main .list-main-right .main-right-card .card-list .share-btn {
+  background: #F3F6FD;
+  width: 100%;
+}
+.mo-vew-main .list-main .list-main-right .main-right-card .card-list .share-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 39px;
+  width: 100%;
+}
+.mo-vew-main .list-main .list-main-right > ul > li:first-child ~ li {
+  width: 100%;
+  margin: 0 auto;
+}
+.mo-vew-main .list-main .list-main-right > ul > li:first-child ~ li button {
+  width: 100%;
+  border: none;
+  height: 42px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.mo-vew-main .list-main .list-main-right > ul > li:first-child ~ li button.edit-btn {
+  background: #000;
+  color: #fff;
+  border: 1px solid #666666;
+}
+.mo-vew-main .list-main .list-main-right > ul > li:first-child ~ li button.delete-btn {
+  background: #C7D6F7;
+  color: #000;
+  border: 1px solid #ABC2F6;
+}

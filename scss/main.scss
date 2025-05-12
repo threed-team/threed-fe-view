@@ -1,0 +1,16 @@
+@import './common.scss';
+
+main {
+    .main_header {
+        h2 {
+            @include CommonTitle;
+            .ico_fire {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: url(../images/ico_fire.png) no-repeat center/contain;
+            }
+        }
+    }
+
+}

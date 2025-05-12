@@ -1,0 +1,119 @@
+/* *******************************
+                common
+**********************************/
+/* *******************************
+                main
+**********************************/
+.mo-write-main {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.mo-write-main h2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  padding-bottom: 17px;
+}
+.mo-write-main h2 img {
+  width: 1.5rem;
+}
+.mo-write-main .write-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.mo-write-main .write-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 10px;
+}
+.mo-write-main .write-list li label, .mo-write-main .write-list li .write-txt {
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.mo-write-main .write-list li input[type=text] {
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid #DBDEE6;
+  text-indent: 12px;
+  font-size: 14px;
+}
+.mo-write-main .write-list li input[type=text]:focus {
+  outline: none;
+  border: 1px solid #614CF6;
+}
+.mo-write-main .write-list li .write-hashtag-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: calc(100% - 12px);
+  height: 52px;
+  border-radius: 6px;
+  border: 1px solid #DBDEE6;
+  padding-left: 12px;
+  gap: 4px;
+}
+.mo-write-main .write-list li .write-hashtag-box input[type=text] {
+  border: none;
+  text-indent: 0;
+}
+.mo-write-main .write-list li .write-hashtag-box input[type=text]:focus {
+  border: none;
+}
+.mo-write-main .write-list li .write-hashtag-box.on {
+  border: 1px solid #614CF6;
+}
+.mo-write-main .write-list li .write-hashtag-box .tag-item {
+  background: #F3F1FF;
+  color: #614CF6;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.mo-write-main .write-list li #content {
+  width: 100%;
+}
+.mo-write-main .write-list li #content .toastui-editor-defaultUI {
+  border-radius: 6px;
+  overflow: hidden;
+}
+.mo-write-main .write-list li #content .toastui-editor-defaultUI.on {
+  border: 1px solid #614CF6;
+}
+.mo-write-main .write-list li .btn-box {
+  border-top: 1px solid #DBDEE6;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+}
+.mo-write-main .write-list li .btn-box button {
+  width: 105px;
+  height: 38px;
+  background: none;
+  font-size: 1rem;
+  border: none;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.mo-write-main .write-list li .btn-box button.return {
+  border: 1px solid #666666;
+  color: #666666;
+}
+.mo-write-main .write-list li .btn-box button.submit {
+  border: 1px solid #614CF6;
+  color: #fff;
+  background: #614CF6;
+}

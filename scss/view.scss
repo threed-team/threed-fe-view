@@ -1,0 +1,204 @@
+@import './mixin.scss';
+@import './variable.scss';
+
+
+.vew-main {
+    padding: 100px 0;
+    width: 1200px;
+    margin: 0 auto;
+    .main-h2 {
+        font-size: 40px;
+        padding: 35px 0;
+    }
+    .list-days {
+        display: flex;
+        color: #8D8D8D;
+    }
+    .main-top-h3 {
+        @include flexCenter(center);
+        gap: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        span {
+            margin-top: 10px;
+        }
+    }
+    .list-main {
+        > ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        .list-main-top {
+            @include flexCenter(space-between);
+            padding: 30px 0 20px;
+            border-bottom: 1.5px solid #1F1F1F;
+        }
+        .list-main-left {
+            width: 670px;
+        }
+        .list-main-middle {
+            padding: 20px 0;
+            p {
+                font-size: 20px;
+                line-height: 40px;
+                font-weight: 200;
+            }
+        }
+        .list-main-bottom {
+            h3 {
+                font-size: 16px;
+                padding-bottom: 20px;
+                line-height: 20px;
+            }
+            .list-main-more {
+                a {
+                    padding: 20px 30px 20px 10px;
+                    display: block;
+                }
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                transition: 0.3s;
+                &:hover {
+                    transform: translateY(-10px);
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                }
+            }
+            .more-sum-main {
+                display: flex;
+                gap: 30px;
+                border-radius: 5px;
+                .more-title {
+                    font-size: 18px;
+                    padding: 8px 0 10px;
+                    font-weight: 500;
+                }
+                .more-text {
+                    font-size: 12px;
+                    font-weight: 200;
+                    color: #333;
+                    line-height: 20px;
+                }
+                .more-bottom {
+                    text-align: right;
+                    font-size: 13px;
+                    color: #8D8D8D;
+                    padding-top: 10px;
+                }
+            }
+        }
+        .list-main-right {
+            padding-top: 30px;
+            width: 450px;
+            >ul{
+                @include column-flexbox($jc:start);
+                gap: 14px;
+            }
+            .right-card-box{
+                width: 300px;
+                margin: 0 auto;
+                border: 1px solid #CDCDCD;
+                box-shadow: 0 4px 20px  rgba(0,0,0,.1);
+                border-radius: 20px;
+            }
+            .main-right-card{          
+                padding: 30px;
+                h3{
+                    @include flexCenter(center);
+                    gap: 20px;
+                    span:last-child{
+                        font-size: 25px;
+                        font-weight: 700;
+                    }
+                }
+                .card-list{
+                    @include column-flexbox;
+                    gap: 10px;
+                    .card-list-second{
+                        @include flexCenter(center);
+                        gap: 26px;
+                        height: 107px;
+                        button{
+                            border: none;
+                            background: none;
+                            @include column-flexbox($jc: space-between);
+                            height: 52px;
+                            cursor: pointer;
+                            p{
+                                font-size: 18px;
+                                color: $color-black;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    .navi-list{
+                        width: 100%;
+                        @include flexCenter(space-between);
+                        a{
+                            display: inline-block;
+                            padding: 10px 0;
+                            width: 66px;
+                            text-align: center;
+                            position: relative;
+                            border-radius: 2px;
+                            color: #8C8C8C;
+                            transition: .3s;
+                            &::after{
+                                @include pseudo('', 1px, 20px);
+                                @include position(absolute, $top: 50%, $right: 0);
+                                background: $color-gray;
+                                transform: translateY(-50%);
+                            }
+                            &:hover{
+                                color: $color-black;
+                            }
+                        }
+                        li:last-child a::after{display: none;}
+                    }
+                    .share-btn{
+                        border-radius: 8px;
+                        background: #F3F6FD;
+                        width: 100%;
+                        transition: .3s;
+                        &:hover{
+                            background: #E4EBFD;
+                        }
+                        a{
+                            @include flexCenter(center);
+                            height: 39px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            >ul>li:first-child ~ li{
+                width: 300px;
+                margin: 0 auto;
+                button{
+                    width: 100%;
+                    border: none;
+                    height: 42px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: .3s;
+                    &.edit-btn{
+                        background: $color-black;
+                        color: $color-white;
+                        border: 1px solid $color-gray-dark;
+                        &:hover{
+                            background: $color-gray-dark;
+                        }
+                    }
+                    &.delete-btn{
+                        background: $color-sky;
+                        color: $color-black;
+                        border: 1px solid #ABC2F6;
+                        &:hover{
+                            background: #ABC2F6;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}

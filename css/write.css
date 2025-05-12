@@ -1,0 +1,124 @@
+/* *******************************
+                common
+**********************************/
+/* *******************************
+                main
+**********************************/
+.write-main {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 160px 0;
+}
+.write-main h2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  padding-bottom: 34px;
+}
+.write-main .write-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+}
+.write-main .write-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 10px;
+}
+.write-main .write-list li label, .write-main .write-list li .write-txt {
+  font-size: 20px;
+  font-weight: 600;
+}
+.write-main .write-list li input[type=text] {
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid #DBDEE6;
+  text-indent: 12px;
+  font-size: 14px;
+}
+.write-main .write-list li input[type=text]:focus {
+  outline: none;
+  border: 1px solid #614CF6;
+}
+.write-main .write-list li .write-hashtag-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: calc(100% - 12px);
+  height: 52px;
+  border-radius: 6px;
+  border: 1px solid #DBDEE6;
+  padding-left: 12px;
+  gap: 4px;
+}
+.write-main .write-list li .write-hashtag-box input[type=text] {
+  border: none;
+  text-indent: 0;
+}
+.write-main .write-list li .write-hashtag-box input[type=text]:focus {
+  border: none;
+}
+.write-main .write-list li .write-hashtag-box.on {
+  border: 1px solid #614CF6;
+}
+.write-main .write-list li .write-hashtag-box .tag-item {
+  background: #F3F1FF;
+  color: #614CF6;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.write-main .write-list li #content {
+  width: 100%;
+}
+.write-main .write-list li #content .toastui-editor-defaultUI {
+  border-radius: 6px;
+  overflow: hidden;
+}
+.write-main .write-list li #content .toastui-editor-defaultUI.on {
+  border: 1px solid #614CF6;
+}
+.write-main .write-list li .btn-box {
+  border-top: 1px solid #DBDEE6;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 34px;
+}
+.write-main .write-list li .btn-box button {
+  width: 140px;
+  height: 62px;
+  background: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.write-main .write-list li .btn-box button.return {
+  border: 1px solid #666666;
+  color: #666666;
+}
+.write-main .write-list li .btn-box button.return:hover {
+  background: #666666;
+  color: #fff;
+}
+.write-main .write-list li .btn-box button.submit {
+  border: 1px solid #614CF6;
+  color: #fff;
+  background: #614CF6;
+}
+.write-main .write-list li .btn-box button.submit:hover {
+  background: none;
+  color: #614CF6;
+}

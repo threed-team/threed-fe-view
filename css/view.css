@@ -1,0 +1,232 @@
+/* *******************************
+                common
+**********************************/
+/* *******************************
+                main
+**********************************/
+.vew-main {
+  padding: 100px 0;
+  width: 1200px;
+  margin: 0 auto;
+}
+.vew-main .main-h2 {
+  font-size: 40px;
+  padding: 35px 0;
+}
+.vew-main .list-days {
+  display: flex;
+  color: #8D8D8D;
+}
+.vew-main .main-top-h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.vew-main .main-top-h3 span {
+  margin-top: 10px;
+}
+.vew-main .list-main > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.vew-main .list-main .list-main-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 20px;
+  border-bottom: 1.5px solid #1F1F1F;
+}
+.vew-main .list-main .list-main-left {
+  width: 670px;
+}
+.vew-main .list-main .list-main-middle {
+  padding: 20px 0;
+}
+.vew-main .list-main .list-main-middle p {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 200;
+}
+.vew-main .list-main .list-main-bottom h3 {
+  font-size: 16px;
+  padding-bottom: 20px;
+  line-height: 20px;
+}
+.vew-main .list-main .list-main-bottom .list-main-more {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.vew-main .list-main .list-main-bottom .list-main-more a {
+  padding: 20px 30px 20px 10px;
+  display: block;
+}
+.vew-main .list-main .list-main-bottom .list-main-more:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.vew-main .list-main .list-main-bottom .more-sum-main {
+  display: flex;
+  gap: 30px;
+  border-radius: 5px;
+}
+.vew-main .list-main .list-main-bottom .more-sum-main .more-title {
+  font-size: 18px;
+  padding: 8px 0 10px;
+  font-weight: 500;
+}
+.vew-main .list-main .list-main-bottom .more-sum-main .more-text {
+  font-size: 12px;
+  font-weight: 200;
+  color: #333;
+  line-height: 20px;
+}
+.vew-main .list-main .list-main-bottom .more-sum-main .more-bottom {
+  text-align: right;
+  font-size: 13px;
+  color: #8D8D8D;
+  padding-top: 10px;
+}
+.vew-main .list-main .list-main-right {
+  padding-top: 30px;
+  width: 450px;
+}
+.vew-main .list-main .list-main-right > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 14px;
+}
+.vew-main .list-main .list-main-right .right-card-box {
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid #CDCDCD;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.vew-main .list-main .list-main-right .main-right-card {
+  padding: 30px;
+}
+.vew-main .list-main .list-main-right .main-right-card h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.vew-main .list-main .list-main-right .main-right-card h3 span:last-child {
+  font-size: 25px;
+  font-weight: 700;
+}
+.vew-main .list-main .list-main-right .main-right-card .card-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.vew-main .list-main .list-main-right .main-right-card .card-list .card-list-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  height: 107px;
+}
+.vew-main .list-main .list-main-right .main-right-card .card-list .card-list-second button {
+  border: none;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  cursor: pointer;
+}
+.vew-main .list-main .list-main-right .main-right-card .card-list .card-list-second button p {
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+}
+.vew-main .list-main .list-main-right .main-right-card .card-list .navi-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.vew-main .list-main .list-main-right .main-right-card .card-list .navi-list a {
+  display: inline-block;
+  padding: 10px 0;
+  width: 66px;
+  text-align: center;
+  position: relative;
+  border-radius: 2px;
+  color: #8C8C8C;
+  transition: 0.3s;
+}
+.vew-main .list-main .list-main-right .main-right-card .card-list .navi-list a::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  background: #D9D9D9;
+  transform: translateY(-50%);
+}
+.vew-main .list-main .list-main-right .main-right-card .card-list .navi-list a:hover {
+  color: #000;
+}
+.vew-main .list-main .list-main-right .main-right-card .card-list .navi-list li:last-child a::after {
+  display: none;
+}
+.vew-main .list-main .list-main-right .main-right-card .card-list .share-btn {
+  border-radius: 8px;
+  background: #F3F6FD;
+  width: 100%;
+  transition: 0.3s;
+}
+.vew-main .list-main .list-main-right .main-right-card .card-list .share-btn:hover {
+  background: #E4EBFD;
+}
+.vew-main .list-main .list-main-right .main-right-card .card-list .share-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 39px;
+  width: 100%;
+}
+.vew-main .list-main .list-main-right > ul > li:first-child ~ li {
+  width: 300px;
+  margin: 0 auto;
+}
+.vew-main .list-main .list-main-right > ul > li:first-child ~ li button {
+  width: 100%;
+  border: none;
+  height: 42px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.vew-main .list-main .list-main-right > ul > li:first-child ~ li button.edit-btn {
+  background: #000;
+  color: #fff;
+  border: 1px solid #666666;
+}
+.vew-main .list-main .list-main-right > ul > li:first-child ~ li button.edit-btn:hover {
+  background: #666666;
+}
+.vew-main .list-main .list-main-right > ul > li:first-child ~ li button.delete-btn {
+  background: #C7D6F7;
+  color: #000;
+  border: 1px solid #ABC2F6;
+}
+.vew-main .list-main .list-main-right > ul > li:first-child ~ li button.delete-btn:hover {
+  background: #ABC2F6;
+}

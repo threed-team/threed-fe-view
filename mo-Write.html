@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threed - 글쓰기</title>
+    <link rel="stylesheet" href="./css/mo-write.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+</head>
+<body>
+    <main class="mo-write-main">
+        <h2>
+            <span><img src="./images/write.png" alt="write"></span><span>새 글 작성</span>
+        </h2>
+        <form>
+            <ul class="write-list">
+                <li>
+                    <label for="write-title">제목</label>
+                    <input type="text" name="" id="write-title" placeholder="제목을 입력해주세요">
+                </li>
+                <li>
+                    <label for="write-hashtag">해시태그</label>
+                    <div class="write-hashtag-box">
+                        <span class="tag-item">#JAVA</span>
+                        <span class="tag-item">#REACT</span>
+                        <input type="text" name="" id="write-hashtag" placeholder="최대 2개 태그">
+                    </div>
+                </li>
+                <li>
+                    <div class="write-txt">내용</div>
+                    <div id="content"></div>
+                </li>
+                <li>
+                    <div class="btn-box">
+                        <button class="return">목록</button>
+                        <button class="submit">등록</button>
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // 두번째 input 박스 포커스 시 border 생성
+            const WriteInput = document.getElementById("write-hashtag");
+            const TagBox = document.querySelector(".write-hashtag-box");
+            WriteInput.addEventListener("focus", function () {
+                TagBox.classList.add("on");
+            });
+            WriteInput.addEventListener("blur", function () {
+                TagBox.classList.remove("on");
+            });
+
+            // 에디터 생성
+            const editor = new toastui.Editor({
+                el: content,
+                height: '500px',
+                initialEditType: 'markdown',
+                initialValue: '내용을 입력해 주세요.',
+                previewStyle: 'vertical'
+            });
+            const Content = document.getElementById("content");
+
+            // 에디터 포커스 시 border 생성
+            const ContentChild = document.querySelector(".toastui-editor-defaultUI");
+            Content.addEventListener("click", () => {
+                ContentChild.classList.add("on");
+            });
+            document.addEventListener("click", (e) => {
+                if (!Content.contains(e.target)) {
+                    ContentChild.classList.remove("on");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
