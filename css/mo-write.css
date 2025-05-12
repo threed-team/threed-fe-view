@@ -145,10 +145,3 @@
   color: #fff;
   background: #614CF6;
 }
-.mo-write-main .write-list li:nth-child(2) ul {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
-  gap: 15px;
-}
