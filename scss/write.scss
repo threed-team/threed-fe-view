@@ -60,6 +60,31 @@
                     font-size: 14px;
                     font-weight: 500;
                 }
+                .select-box{
+                    position: relative;
+                    &::after{
+                        @include pseudo('', 5px, 5px);
+                        border-bottom: 1.5px solid $color-gray-dark;
+                        border-left: 1.5px solid $color-gray-dark;
+                        position: absolute;
+                        top: calc(50% - 1px);
+                        right: 10px;
+                        transform: translate(-50%,-50%) rotate(-45deg);
+                    }
+                    select{
+                        border: none;
+                        text-align: center;
+                        height: 30px;
+                        width: 120px;
+                        border : 1px solid $color-sky-gray;
+                        border-radius: 8px;
+                        appearance: none;
+                        outline: none;
+                    }
+                    select:focus{
+                        border : 1px solid $color-main;
+                    }
+                }
             }
             #content{
                 width: 100%;
@@ -102,6 +127,13 @@
                             color: $color-main;
                         }
                     }
+                }
+            }
+            &:nth-child(2){
+                ul{
+                    @include flexCenter(start);
+                    width: 100%;
+                    gap: 15px;
                 }
             }
         }

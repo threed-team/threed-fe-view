@@ -77,6 +77,34 @@
   font-size: 14px;
   font-weight: 500;
 }
+.write-main .write-list li .write-hashtag-box .select-box {
+  position: relative;
+}
+.write-main .write-list li .write-hashtag-box .select-box::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-bottom: 1.5px solid #666666;
+  border-left: 1.5px solid #666666;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 10px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.write-main .write-list li .write-hashtag-box .select-box select {
+  border: none;
+  text-align: center;
+  height: 30px;
+  width: 120px;
+  border: 1px solid #DBDEE6;
+  border-radius: 8px;
+  appearance: none;
+  outline: none;
+}
+.write-main .write-list li .write-hashtag-box .select-box select:focus {
+  border: 1px solid #614CF6;
+}
 .write-main .write-list li #content {
   width: 100%;
 }
@@ -121,4 +149,11 @@
 .write-main .write-list li .btn-box button.submit:hover {
   background: none;
   color: #614CF6;
+}
+.write-main .write-list li:nth-child(2) ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
 }
